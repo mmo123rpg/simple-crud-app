@@ -9,7 +9,7 @@ const productRoute = require("./routes/product.route")
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-//routes
+//routes to make route
 app.use("/", productRoute)
 
 app.get('/', (req, res) => {
